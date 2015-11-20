@@ -1,0 +1,20 @@
+<p>This is the partial for view 2.</p>
+<div>
+    <p>Data from server (Users ONLY) <b style="color: darkblue">{{data}}</b></p>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+            <tr ng-repeat="clubs in foot">
+                <td>
+                    {{clubs.name}}
+                </td>
+                <td>
+                    <a href="{{clubs.url}}">Link</a>
+                </td>
+            </tr>
+    </table>
+</div>
